@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!-- banking form -->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Banking Form</title>
+</head>
+<body>
+	<form action="data-sends-here" method="post">
+	<!-- name - get fields set up correctly -->
+  <div>
+    <fieldset>
+      <legend>Personal Information</legend>
+      <label for="First Name">First Name</label>
+      <input type="text" id="first-name">
+      <label for="Middle Initial">MI</label>
+      <input type="text" id="middle-initial">
+      <label for="Last Name">Last Name</label>
+      <input type="text" id="last-name"><br>
+<!-- address -->
+      <label for="Street Address">Street Address</label>
+      <input type="text" id="street-address">
+      <label for="Line Two">Suite, Apt, Unit, etc</label>
+      <input type="text" id="line-two">
+      <label for="City">City</label>
+      <input type="text" id="City">
+      <label for="State">State</label><select name="states">
+        <option value="select-none">Please select:</option>
+        <option value="AL">AL-Alabama</option>
+        <option value="AK">AK-Alaska</option>
+        <option value="AZ">AZ-Arizona</option>
+        <option value="AR">AR-Arkansas</option>
+        <option value="CA">CA-California</option>
+        <option value="CO">CO-Colorado</option>
+        <option value="CT">CT-Connecticut</option>
+        <option value="DE">DE-Delaware</option>
+        <option value="DC">DC-District Of Columbia</option>
+        <option value="FL">FL-Florida</option>
+        <option value="GA">GA-Georgia</option>
+        <option value="HI">HI-Hawaii</option>
+        <option value="ID">ID-Idaho</option>
+        <option value="IL">IL-Illinois</option>
+        <option value="IN">IN-Indiana</option>
+        <option value="IA">IA-Iowa</option>
+        <option value="KS">KS-Kansas</option>
+        <option value="KY">KY-Kentucky</option>
+        <option value="LA">LA-Louisiana</option>
+        <option value="ME">ME-Maine</option>
+        <option value="MD">MD-Maryland</option>
+        <option value="MA">MA-Massachusetts</option>
+        <option value="MI">MI-Michigan</option>
+        <option value="MN">MN-Minnesota</option>
+        <option value="MS">MS-Mississippi</option>
+        <option value="MO">MO-Missouri</option>
+        <option value="MT">MT-Montana</option>
+        <option value="NE">NE-Nebraska</option>
+        <option value="NV">NV-Nevada</option>
+        <option value="NH">NH-New Hampshire</option>
+        <option value="NJ">NJ-New Jersey</option>
+        <option value="NM">NM-New Mexico</option>
+        <option value="NY">NY-New York</option>
+        <option value="NC">NC-North Carolina</option>
+        <option value="ND">ND-North Dakota</option>
+        <option value="OH">OH-Ohio</option>
+        <option value="OK">OK-Oklahoma</option>
+        <option value="OR">OR-Oregon</option>
+        <option value="PA">PA-Pennsylvania</option>
+        <option value="RI">RI-Rhode Island</option>
+        <option value="SC">SC-South Carolina</option>
+        <option value="SD">SD-South Dakota</option>
+        <option value="TN">TN-Tennessee</option>
+        <option value="TX">TX-Texas</option>
+        <option value="UT">UT-Utah</option>
+        <option value="VT">VT-Vermont</option>
+        <option value="VA">VA-Virginia</option>
+        <option value="WA">WA-Washington</option>
+        <option value="WV">WV-West Virginia</option>
+        <option value="WI">WI-Wisconsin</option>
+        <option value="WY">WY-Wyoming</option></select>
+      <label for="zip">Zip code</label>
+      <input type="text" id="zip-code">
+  </fieldset>
+  </div>
+  <!-- occupation and employer - correct setup -->
+  <fieldset>
+  <legend>Applicant employment information</legend>
+       <label for="Employer">Employer</label>
+      <input type="text" id="employer">
+      <label for="Occupation">Occupation</label>
+      <input type="text" id="occupation"><br>
+<!-- employeraddress -->
+      <label for="Employer Address">Employer Address</label>
+      <input type="text" id="street-address">
+      <label for="Emp Line Two">Suite, Apt, Unit, etc</label>
+      <input type="text" id="emp-line-two">
+      <label for="emp-City">City</label>
+      <input type="text" id="emp-City">
+      <label for="emp-State">State</label><select name="emp-states">
+        <option value="select-none">Please select:</option>
+        <option value="AL">AL-Alabama</option>
+        <option value="AK">AK-Alaska</option>
+        <option value="AZ">AZ-Arizona</option>
+        <option value="AR">AR-Arkansas</option>
+        <option value="CA">CA-California</option>
+        <option value="CO">CO-Colorado</option>
+        <option value="CT">CT-Connecticut</option>
+        <option value="DE">DE-Delaware</option>
+        <option value="DC">DC-District Of Columbia</option>
+        <option value="FL">FL-Florida</option>
+        <option value="GA">GA-Georgia</option>
+        <option value="HI">HI-Hawaii</option>
+        <option value="ID">ID-Idaho</option>
+        <option value="IL">IL-Illinois</option>
+        <option value="IN">IN-Indiana</option>
+        <option value="IA">IA-Iowa</option>
+        <option value="KS">KS-Kansas</option>
+        <option value="KY">KY-Kentucky</option>
+        <option value="LA">LA-Louisiana</option>
+        <option value="ME">ME-Maine</option>
+        <option value="MD">MD-Maryland</option>
+        <option value="MA">MA-Massachusetts</option>
+        <option value="MI">MI-Michigan</option>
+        <option value="MN">MN-Minnesota</option>
+        <option value="MS">MS-Mississippi</option>
+        <option value="MO">MO-Missouri</option>
+        <option value="MT">MT-Montana</option>
+        <option value="NE">NE-Nebraska</option>
+        <option value="NV">NV-Nevada</option>
+        <option value="NH">NH-New Hampshire</option>
+        <option value="NJ">NJ-New Jersey</option>
+        <option value="NM">NM-New Mexico</option>
+        <option value="NY">NY-New York</option>
+        <option value="NC">NC-North Carolina</option>
+        <option value="ND">ND-North Dakota</option>
+        <option value="OH">OH-Ohio</option>
+        <option value="OK">OK-Oklahoma</option>
+        <option value="OR">OR-Oregon</option>
+        <option value="PA">PA-Pennsylvania</option>
+        <option value="RI">RI-Rhode Island</option>
+        <option value="SC">SC-South Carolina</option>
+        <option value="SD">SD-South Dakota</option>
+        <option value="TN">TN-Tennessee</option>
+        <option value="TX">TX-Texas</option>
+        <option value="UT">UT-Utah</option>
+        <option value="VT">VT-Vermont</option>
+        <option value="VA">VA-Virginia</option>
+        <option value="WA">WA-Washington</option>
+        <option value="WV">WV-West Virginia</option>
+        <option value="WI">WI-Wisconsin</option>
+        <option value="WY">WY-Wyoming</option></select>
+      <label for="zip">Zip code</label>
+      <input type="text" id="zip-code">
+
+  </fieldset>
+  <!-- loan type select element - only one selectable - maybe group all loan info together -->
+  <fieldset>
+  <legend>Loan type</legend>
+  <select name="Loan Type"><label for="Loan Type">Loan Type:</label>
+  <option value="value1" selected>select one</option> 
+  <option value="value2">Commercial</option>
+  <option value="value3">Real estate</option>
+  <option value="value4">Personal</option> 
+  <option value="value5">Mortgage</option>
+</select>
+</fieldset>
+<!-- loan amount - adjust label-->
+<fieldset>
+<legend>Loan Amount</legend>
+      <label for="Loan Amount">Loan Amount</label>
+      <input type="text" id="amount"><br>
+</fieldset>
+<!-- radio button loan length, figure out to only allow one selection -->
+<fieldset>
+<legend>Loan length</legend>
+	<input type="radio" name="length"> <label for="length5">5 years</label>
+	<input type="radio" name="length"> <label for="length15">15 years</label>
+	<input type="radio" name="length"> <label for="length30">30 years</label>
+</fieldset>
+<!-- special conditions - checkboxes - needs information - inline? -->
+<fieldset>
+<legend>Special conditions</legend>
+	<input type="checkbox" id="down"><label for="down">I have a down payment</label>
+	<input type="checkbox" id="outofstate"><label for="out of state">Out-of-state Resident</label>
+	<input type="checkbox" id="married"><label for="married">Married</label>
+	<input type="checkbox" id="cosign"><label for="cosign">Loan will be co-signed</label>
+</fieldset>
+<!-- text area for add comments - fix label, change to textarea -->
+<fieldset>
+<legend>Additional comments</legend>
+  <textarea name="textarea" rows="7" cols="50"></textarea>
+</fieldset>
+<!-- contact info - fix labels - set to require correct-->
+<fieldset>
+<legend>Contact information</legend>
+	<label for="email">Email Address</label>
+	<input type="text" id="email">
+  <label for="phone">Contact phone</label>
+	<input type="text"><label for="telephone">
+	<label for="linkedin">LinkedIn URL</label>
+  <input type="text" id="linkedin">
+</fieldset>
+<!-- submit button -->
+</form>
+</body>
+</html>
+
+<!-- indent correctly, fix labels, name, aesthetics etc -->
+
+
+
+
+
+
+
